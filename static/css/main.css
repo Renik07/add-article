@@ -1,0 +1,12 @@
+.row_form {
+	width: 1100px;
+	margin: 100px auto 100px;
+}
+
+.carousel-caption {
+	bottom: 8rem;
+}
+
+.carousel-item img {
+	object-fit: cover;
+}

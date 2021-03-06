@@ -1,0 +1,30 @@
+{{ define "create" }} {{ template "header" }}
+
+<main>
+  <div class="row_form">
+    <h1>Форма добавления статьи</h1>
+    <form action="/save_article" class="inner cover" method="POST">
+      <div class="mb-3">
+        <label for="title" class="form-label">Введите название статьи</label>
+        <input type="text" name="title" class="form-control" id="title" />
+        <div class="form-text">Введите название не более 100 символов.</div>
+      </div>
+      <div class="mb-3">
+        <label for="anons" class="form-label">Введите краткое описание статьи</label>
+        <textarea name="anons" id="anons" class="form-control"></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="full_text">Введите текст статьи</label>
+        <textarea
+          id="full_text"
+          rows="10"
+          name="full_text"
+          class="form-control"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>
+  </div>
+</main>
+
+{{ template "footer" }} {{ end }}

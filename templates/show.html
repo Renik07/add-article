@@ -1,0 +1,13 @@
+{{ define "show" }} {{ template "header" }}
+
+<main>
+  <div class="container marketing margin" style="margin-top: 100px; margin-bottom: 100px;">
+    <div class="alert alert-primary">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .FullText }}</p>
+      <a href="/">Назад</a>
+    </div>
+  </div>
+</main>
+
+{{ template "footer" }} {{ end }}
